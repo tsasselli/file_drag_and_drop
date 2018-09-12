@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DropZoneDirective } from './drop-zone.directive';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DropZoneDirective
+    DropZoneDirective,
+    FileUploadComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
